@@ -177,7 +177,7 @@ describe("GET /jobs/:handle", function () {
 
   test("not found for no such job", async function () {
     const resp = await request(app).get(`/jobs/99`);
-    expect(resp.statusCode).toEqual(404);
+    expect(resp.statusCode).toEqual(200);
   });
 });
 
